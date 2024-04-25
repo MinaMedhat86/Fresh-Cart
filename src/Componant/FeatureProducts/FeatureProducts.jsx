@@ -8,7 +8,7 @@ import { useQuery } from 'react-query';
 import { Link } from 'react-router-dom';
 import { CartContext } from '../../Context/CartContext';
 import React, { useContext, useEffect, useState} from 'react'
-import toast from 'react-hot-toast';
+import toast, { Toaster } from 'react-hot-toast';
 
 export  function FeatureProducts() {
 
