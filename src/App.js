@@ -31,7 +31,7 @@ function App() {
   let routers = createBrowserRouter ([
 {path: "/" , element : <LayOut/> , children : [
 
-  {index : true , element : <ProtectedRoute> <Home/> </ProtectedRoute>},
+  {path : "Fresh-Cart" , element : <ProtectedRoute> <Home/> </ProtectedRoute>},
   {path:"products" , element : <ProtectedRoute> <Products/> </ProtectedRoute> },
   {path:"login" , element : <Login/>},
   {path:"categories" , element : <ProtectedRoute> <Categories/> </ProtectedRoute>},
@@ -43,7 +43,7 @@ function App() {
   {path:"userAddress" , element : <ProtectedRoute> <UserAddress/> </ProtectedRoute>},
   {path:"wishList" , element : <ProtectedRoute> <WishList/> </ProtectedRoute>},
   {path:"allorders" , element : <ProtectedRoute> <AllOrders/> </ProtectedRoute>},
-  {path:"*" , element : <NotFound/>},
+  {path:"*" , element :  <ProtectedRoute> <NotFound/> </ProtectedRoute>},
 
 ] }
 

@@ -31,7 +31,7 @@ let navigate = useNavigate();
 
         {userToken !== null ? <>
           <li className="nav-item">
-          <Link className="nav-link" to="/">Home</Link>
+          <Link className="nav-link" to="/Fresh-Cart">Home</Link>
         </li>
         <li className="nav-item">
           <Link className="nav-link" to="/products">Products</Link>
